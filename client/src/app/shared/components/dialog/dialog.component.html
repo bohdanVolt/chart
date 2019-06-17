@@ -1,0 +1,33 @@
+<div class="ui-dialog-wrp">
+	<p-dialog
+	[modal]="true"
+	[draggable]="false"
+	[width]="400"
+	[minWidth]="250"
+	[minHeight]="250"
+	[minY]="70"
+	[maximizable]="false"
+	[(visible)]="display"
+	[resizable]="false"
+	(onHide)="close()"
+	[closable]="true">
+	<p-header>
+		Sharing
+	</p-header>
+		<div class="email-input">
+			<p>Please provide user email for granting access</p>
+			<app-input-text
+				class="ui-fluid"
+				type="text"
+				label="Email"
+				[control]="formGroup.controls['email']"
+				[autofocus]="true"
+			>
+			</app-input-text>
+		</div>
+		<p-footer>
+			<app-button label="Send" [disabled]="!formGroup.valid" (onclick)="share(formGroup.value)" size="small"></app-button>
+		</p-footer>
+	</p-dialog>
+
+</div>

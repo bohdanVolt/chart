@@ -1,0 +1,49 @@
+@import ../variables
+@import ../colors
+
+
+.ui-main-block
+	width: 100%
+	min-height: 20px
+	border-top: none
+	padding: 1.5rem
+	display: block
+	position: relative
+	margin-bottom: 1rem 
+	border-radius: 3px
+	font-family: $fontFamily
+	font-size: $fontSize
+	transition: .1s ease
+	background-color: $stateDefaultBgColor
+	box-shadow: -1px 1px 3px rgba(151, 155, 174, 0.2), 1px 1px 3px rgba(151, 155, 174, 0.2)
+	box-sizing: border-box
+	&.compact
+		padding: 1rem
+
+.ui-main-block-header
+	padding: 0
+	font-size: 1.6rem
+	display: flex
+	align-items: center
+	line-height: 1.3rem
+	i
+		font-size: 1.3rem
+		margin-bottom: 2px
+
+.animated-main-block
+	display: block
+	// overflow: hidden
+	width: 100%
+
+h1, h2
+	font-family: $fontFamily
+	margin: 0
+	font-size: 2rem
+	font-weight: 400
+	color: $stateActiveTextColor
+
+	i
+		margin-right: 12px
+
+h2
+	font-size: 1.6rem

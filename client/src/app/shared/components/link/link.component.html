@@ -1,0 +1,11 @@
+<a
+    [ngClass]="getClasses()"
+    [routerLink]="link"
+    [ngSwitch]="displayWith"
+	(click)="onClick($event)"
+>
+    <span class="label">{{label}}</span>
+
+    <i *ngSwitchCase="'shape'" [ngClass]="getShapeClasses()"></i>
+    <i *ngSwitchCase="'icon'" [ngClass]="getIconClasses()"></i>
+</a>

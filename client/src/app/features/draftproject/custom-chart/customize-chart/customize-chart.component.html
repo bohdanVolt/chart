@@ -1,0 +1,28 @@
+<div class="customize-chart-container" [ngSwitch]="chartType">
+	<app-bar-chart-customize
+		*ngSwitchCase="'barChart'"
+		[formGroup]="formGroup"
+		[customizeSettings]="customizeSettings"
+	></app-bar-chart-customize>
+	<app-pie-chart-customize
+		*ngSwitchCase="'pieChart'"
+		[formGroup]="formGroup"
+		[customizeSettings]="customizeSettings"
+	></app-pie-chart-customize>
+	<app-scatterplot-chart-customize
+		*ngSwitchCase="'scatterplot'"
+		[formGroup]="formGroup"
+		[customizeSettings]="customizeSettings"
+	></app-scatterplot-chart-customize>
+	<app-alluvial-diagram-chart-customize
+		*ngSwitchCase="'alluvialDiagram'"
+		[formGroup]="formGroup"
+		[customizeSettings]="customizeSettings"
+	></app-alluvial-diagram-chart-customize>
+	<app-world-map-chart-customize
+		*ngSwitchCase="'worldMap'"
+		[formGroup]="formGroup"
+		[customizeSettings]="customizeSettings"
+	></app-world-map-chart-customize>
+</div>
+

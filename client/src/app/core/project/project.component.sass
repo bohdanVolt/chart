@@ -1,0 +1,43 @@
+@import "../../../theme/colors"
+.project-container
+	width: 100%
+	margin: 0 auto
+	padding-bottom: 5rem
+
+.main-content
+	margin: 0 auto
+	padding-top: 20px
+	position: relative
+	width: 60%
+
+app-load-data
+	display: block
+
+app-data-table
+	display: block
+
+@media screen and(max-width: 1000px)
+	.main-content
+		width: 90%
+	app-stepper
+		display: none
+
+.modal-controls
+	display: flex
+	justify-content: flex-end
+
+.active
+	color: #3ccc38
+.page
+	cursor: pointer
+
+.link-container
+	display: flex
+	justify-content: center
+
+.custom-link
+	color: $activeColor
+	text-decoration: none
+	cursor: pointer
+	&:hover
+		color: $secondaryTextColor

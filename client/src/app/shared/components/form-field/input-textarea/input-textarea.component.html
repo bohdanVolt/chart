@@ -1,0 +1,16 @@
+<label
+    *ngIf="label"
+    class="input-label"
+	[attr.disabled]="disabled"
+>
+    {{label}}
+</label>
+
+<textarea 	[formControl]="control"
+        pInputTextarea 
+        [rows]="rows"
+        [cols]="cols"
+        [attr.disabled]="disabled"
+		[autoResize]="autoResize"
+		[placeholder]="placeholder"
+></textarea>
